@@ -1,0 +1,11 @@
+<title>cheeseacademy</title>
+<meta name="description" content="cheeseacademy のSiteです。">
+<meta property="og:title" content="cheeseacademy">
+<meta property="og:type" content="website">
+<meta property="og:url" content="#">
+<meta property="og:image" content="images/common/ogimage.png">
+<meta property="og:site_name" content="cheeseacademy Site">
+<meta property="og:description" content="cheeseacademy のSiteです">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="images/common/touch-icon.png">
+<link rel="shortcut icon" href="images/commn/favicon.icon">

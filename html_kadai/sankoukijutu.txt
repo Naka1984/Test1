@@ -1,0 +1,54 @@
+<!--htmlの作成手順
+・テキストデータを貼り付ける
+・構成の見出しごとにsectionで個別に囲む
+・大見出しはheaderで囲む(navまで)
+・大見出しにあるナビゲーションリンクはnavで囲む
+・headerの大見出しの文をh1で囲む
+・section事の見出しをh2で囲む
+・最後の著作権のところはfooterで囲む
+・本文の内容を囲む
+　文章はpタグ、段落かえるときはbrタグ
+　文章間の余白を開ける時にbrタグは使わずcssで対応
+・リストはliで囲み、li全体をulで囲む
+・画像表示する時に画像のパスの書き方
+　・indexファイルと同じ階層にある場合はファイル名のみ
+　・indexファイルと同じ階層のimagesフォルダにある場合はimages/ファイル名　でOK
+　・stylecssで画像を読み込みたい際に、cssフォルダと違うフォルダに画像ファイルがある場合は
+　　../を使って(フォルダ階層が一回一個上に戻る)../images/ファイル名　という感じで指定する
+・リンクを作るとき、<a href="#" target="_blank">更にニュースを見る</a>　と記述するが
+　自分のWebページ以外に飛ばす時はtarget=_blankを入れて別タブで開くようにするといい。＊「＃」のところにURL記載する
+・画像や文章も構成上リストとして<ul><li></li></ul>で囲む
+・ul>li*3 でリストタグが３つ出てくる
+・ul>(li>a)*３でリストとリンクが３つ出てくる
+・ナビゲーションリンク(navで囲ったところ)からページ内で飛ばす時はnav内でリストとリンクのHTMLを書いて
+　＃〜で飛ばす先を指定　指定先のsectionで<section id="●●">
+・問い合わせフォームはdl>(dt+dd)*# でベースを作る(#は設問数を入れる)
+　・dlで全体を囲む
+　・dt=質問
+　・dd=回答
+◆headタグの中身
+　・<meta name="viewport" content="width"〜の記述はスマホでも見れるようにするための必須記述
+　・title Webサイトで検索した時に出てくるサイト名
+　・description 検索した時に出てくるサイトの説明書き
+　・favicon　サイト表示時のタイトルの横に出るアイコン　ブックマーク登録の時も出てくる
+　・touch-icon スマホでブックマーク登録した時に出てくるアイコン
+　　・iPhone・・・152×152
+　　・Android・・192×192
+　・OGP(オープングラフプロトコル)　SNSでWebサイトがシェアされた時にどう見えるかを設定
+　　・og:site_name・・・Webサイト名
+　　・og:type・・・websaite,articleなど種類を設定
+　　・og:image・・・1200*630推奨
+　　・og:title・・・
+　　・og:description・・・説明
+　　・og:url・・・サイトアドレス
+　　　https://developers.facebook.com/tools/debug/   ⇦シェアされた時にどう見えるかデバッグできる
+　　★Twitterの場合はTwitter Cardの設定を行う
+　　　⇨<meta name="twitter:caed"content="カード種類"/>
+      ⇨カード種類　summary・・・・ほぼ正方形に近い。小さめの画像。
+       　　　　　　summary_laege_image・・・大きめの画像
+       https://cards-dev.twitter.com/validator　(カードバリデーター)で見栄えを確認可能
+　・<meta name="format-detection"content="telephone=no">
+    ⇨スマホ用に記述するタグ　電話番号っぽい数字の羅列が勝手に電話番号として認識し表示されるのでその挙動を制御するタグ
+　headタグに入れる内容は色々これから出てくるのでこれらが全てではない。
+
+-->
